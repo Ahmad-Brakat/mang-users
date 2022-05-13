@@ -1,20 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux'
-import { BrowserRouter } from 'react-router-dom';
-import store from './Redux/store'
+// import { Provider } from 'react-redux'
+// import { BrowserRouter } from 'react-router-dom';
+// import store from './Redux/store'
 
 
 ReactDOM.createRoot(
   document.querySelector("#root")).render(
-    <React.StrictMode>
-      <BrowserRouter basename='/mang-users/'>
+    <React.StrictMode> 
+      ffffff
+      {/* <BrowserRouter basename='/mang-users/'>
         <Provider store={store}>
           <App />
         </Provider>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </React.StrictMode>
   );
 
