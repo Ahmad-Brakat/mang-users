@@ -1,0 +1,19 @@
+const server = jsonServer.create();
+const jsonServer = require('json-server')
+const router = jsonServer.router('./db.json');
+const cors=require('cors')
+const middlewares = jsonServer.defaults({
+    static: './build'
+});
+const PORT = process.env.PORT || 3000;
+server.use(middlewares);
+server.use(jsonServer.rewriter({
+    '/api/*': '/$1',
+}))
+server.use(router);
+server.use(cors)
+server.listen(PORT, err => {
+    if (err) throw err;
+    console.log('Server is running');
+});
+
