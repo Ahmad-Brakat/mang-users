@@ -10,7 +10,7 @@ import store from './Redux/store'
 ReactDOM.createRoot(
   document.querySelector("#root")).render(
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename='/mang-users/'>
         <Provider store={store}>
           <App />
         </Provider>
